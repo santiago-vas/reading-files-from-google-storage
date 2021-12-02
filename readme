@@ -1,0 +1,3 @@
+this code is use to read a file without format that is save in an specific bucket and project in GCS.
+
+the code reads it and create a temp file to read with the right format as a kml and the convert it to a topojson
