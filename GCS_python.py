@@ -32,7 +32,9 @@ tmp_kml.close()
 
 print(type(df))
 
+
 try:
+    
     df['geometry'] = gpd.GeoSeries.from_wkt(df['geometry'])
 except:
     print('el dataframe contiene las varaibles correctas geometry')
@@ -73,4 +75,5 @@ except:
 geodf_2d=df.rename(columns={'Name':'polyg_name'})
 geodf_2d.polyg_name.nunique()
 geodf_2d.plot()
+
 geodf_2d
