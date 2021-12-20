@@ -17,4 +17,4 @@ data=blob.download_as_string()
 
 data2=data.decode('UTF-8')
 
-data,data2
+data
