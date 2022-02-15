@@ -1,3 +1,7 @@
 this code is use to read a file without format that is save in an specific bucket and project in GCS.
 
 the code reads it and create a temp file to read with the right format as a kml and the convert it to a topojson
+
+
+the code reads a .kml file, but ir brings it ti python with no format for that reason the code is using the tempfile funcition to pass it throuw a function capable to convert it to the format we are 
+looking for, in this specific case we use it to transform .kml file to a gepdataframe and built a topojson.
